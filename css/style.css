@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li,a {
+list-style-type: none;
+color: #000;
+text-decoration: none !important;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", "Archivo";
+}
+/*---------fonts are here-------------*/
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.woff2') format('woff2'),
+        url('../fonts/Oswald-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Oswald-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Light.woff2') format('woff2'),
+        url('../fonts/Oswald-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Medium.woff2') format('woff2'),
+        url('../fonts/Oswald-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-SemiBold.woff2') format('woff2'),
+        url('../fonts/Oswald-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*---------Header starts here----------*/
+.logo img {
+    width: 200px;
+}
+.navigation-list {
+    gap: 20px;
+}
+.header {
+    background-color: #fff;
+    padding: 32px 0;
+}
+.header a {
+    font-weight: 600;
+}
+/*---------Banner starts here----------*/
+.banner .container {
+    background: url("../images/background.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 5%;
+}
+.banner img{
+    clip: rect(0px,584px,691px,-2px);
+    position: absolute;
+    right: -130px;
+}
+.col-left {
+    padding: 130px 0 130px 20px;
+    max-width: 564px;
+}
+.col-left h1 {
+    font-size: 65px;
+    line-height: 77px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+.col-left p{
+    font-size: 18px;
+    max-width: 510px;
+    line-height: 30px;
+}
+.banner-buttons {
+    gap: 20px;
+    padding: 30px 0 0 0;
+}
+.buttonsMain {
+    color: #fff;
+    width: 245px;
+    height: 65px;
+    font-weight: 700;
+    transition: .2s all ease-in-out;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #43baff;
+}
+.buttonsMain:hover {
+    background-color: #7141B1;
+}
+.buttonSecondary {
+    color: #fff;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 0 20px;
+    border: transparent;
+}
+.buttonSecondary:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
