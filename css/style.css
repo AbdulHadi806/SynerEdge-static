@@ -3,14 +3,48 @@
     padding: 0;
     margin: 0;
 }
-li,a {
-list-style-type: none;
-color: #000;
-text-decoration: none !important;
-}
 body, h1, h2, h3, h4, h5, h6 {
     font-family: "Oswald", "Archivo";
     font-weight: 400;
+}
+body {
+	background-color: #fff;
+	color: #444;
+	font-size: 16px;
+	line-height: 1.9;
+	font-weight: 400;
+	font-family: 'Montserrat-Regular';
+}
+img,
+a,h1,h2,h3,h4,h5,h6,li,p,span,ul {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+h1 {
+    font-size: 40px;
+    font-family: Montserrat-Bold;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: rgb(23, 39, 66);
+}
+ h2{
+    font-size: 35px;
+    font-family: 'Montserrat-Medium';
+    color: #172742;
+    line-height: 1;
+   
+}
+h3{
+    color: #fff;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 30px;
+    line-height: 1;
+}
+h4 {
+    font-size: 35px;
+    font-family: 'Montserrat-Medium';
 }
 /*---------fonts are here-------------*/
 @font-face {
@@ -238,58 +272,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .services .col-right p {
     padding: 20px 0;
 }
-/* global css end */
-* {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-	margin: 0px;
-	padding: 0px;
-}
 
-.container {
-	max-width: 1120px;
-	margin: 0 auto;
-}
-
-body {
-	background-color: #fff;
-	color: #444;
-	font-size: 16px;
-	line-height: 1.9;
-	font-weight: 400;
-	font-family: 'Montserrat-Regular';
-}
-img,
-a,h1,h2,h3,h4,h5,h6,li,p,span,ul {
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style-type: none;
-}
-h1 {
-    font-size: 40px;
-    font-family: Montserrat-Bold;
-    line-height: 1;
-    margin-bottom: 15px;
-    color: rgb(23, 39, 66);
-}
- h2{
-    font-size: 35px;
-    font-family: 'Montserrat-Medium';
-    color: #172742;
-    line-height: 1;
-   
-}
-h3{
-    color: #fff;
-    font-family: 'Montserrat-SemiBold';
-    font-size: 30px;
-    line-height: 1;
-}
-h4 {
-    font-size: 35px;
-    font-family: 'Montserrat-Medium';
-}
 
 /* services row starts here --------------------- */
 .services-row {
