@@ -236,5 +236,384 @@ body, h1, h2, h3, h4, h5, h6 {
     font-size: 49px;
 }
 .services .col-right p {
-    padding-top: 20px;
+    padding: 20px 0;
+}
+/* global css end */
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+body {
+	background-color: #fff;
+	color: #444;
+	font-size: 16px;
+	line-height: 1.9;
+	font-weight: 400;
+	font-family: 'Montserrat-Regular';
+}
+img,
+a,h1,h2,h3,h4,h5,h6,li,p,span,ul {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+h1 {
+    font-size: 40px;
+    font-family: Montserrat-Bold;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: rgb(23, 39, 66);
+}
+ h2{
+    font-size: 35px;
+    font-family: 'Montserrat-Medium';
+    color: #172742;
+    line-height: 1;
+   
+}
+h3{
+    color: #fff;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 30px;
+    line-height: 1;
+}
+h4 {
+    font-size: 35px;
+    font-family: 'Montserrat-Medium';
+}
+
+/* services row starts here --------------------- */
+.services-row {
+    position:relative;
+    background-color:#f7f7f7;
+    padding-bottom:100px;
+}
+.services-row:before {
+    background:url(../images/banner-bg.jpg) left top no-repeat;
+    background-size:cover;
+    height:420px;
+    width:calc( 100% - 140px );
+    border-radius: 40px;
+    content:'';
+    position:absolute;
+    left:70px;
+    right:70px;
+    top:0;
+    margin:0 auto;
+}
+.services-row .container {
+    max-width:1320px;
+    margin:0 auto;
+    position:relative;
+}
+.services-row h2 {
+    text-align:center;
+    color:#fff;
+    font-size:50px;
+    line-height: 1.2;
+    padding:70px 0;
+}
+.service-slider {
+    position:relative;
+    padding-bottom:60px;
+}
+.service-slider .slick-slide {
+    margin-right:30px;
+}
+.services-card {
+    padding: 65px 45px;
+    border-radius: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 13px 32px 0px rgb(199 199 199 / 25%);
+    box-shadow: 0px 13px 32px 0px rgb(199 199 199 / 25%);
+    min-height: 320px;
+}
+.service-icon {
+    margin:0 0 50px 0;
+}
+.service-descp h3 {
+    color: #090928;
+    font-size: 26px;
+    max-width: 185px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+.service-descp a {
+    color: #090928;
+    text-transform:uppercase;
+    transition:all .3s ease-in-out;
+}
+.service-descp i {
+    transition:all .3s ease-in-out;
+}
+.service-descp a:hover {
+    color:#43BAFF;
+}
+.service-descp a:hover i {
+    margin-left:8px;
+}
+.service-slider .slick-prev, .service-slider .slick-next {
+    bottom:-55px;
+    top:auto;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background-color:#fff;
+    transition:all .3s ease-in-out;
+}
+.service-slider .slick-prev {
+    left:-100px;
+}
+.service-slider .slick-next {
+    right:-100px;
+}
+.service-slider .slick-next:before, .service-slider .slick-prev:before {
+    color:#000;
+    content:"\f061";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    opacity:1;
+    transition:all .3s ease-in-out;
+}
+.service-slider .slick-prev:hover, .service-slider .slick-next:hover {
+    background-color:#43baff;
+}
+.service-slider .slick-next:hover:before, .service-slider .slick-prev:hover:before {
+    color:#fff;
+}
+.service-slider .slick-prev:before {
+    content:"\f060";
+}
+.service-slider .slick-dots {
+    display:flex;
+    position:relative;
+    top:60px;
+    width:97%;
+    height:2px;
+    z-index: 9;
+    background-color:#ccc;
+    margin:0 auto;
+}
+.service-slider .slick-dots li.slick-active {
+    background-color:#43baff;
+}
+.service-slider .slick-dots li, .service-slider .slick-dots li button {
+    width:50%;
+    height:6px;
+    border-radius:0;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+    margin-top:-2px;
+}
+.service-slider .slick-dots li button {
+    width:100%;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+}
+.service-slider .slick-dots li.slick-active button:before {
+    opacity:1;
+}
+
+/* services row ends here ----------------------- */
+
+/* launched projects starts here ---------------- */
+.launched-projects {
+    position:relative;
+    padding:125px 0;
+}
+.launched-projects .container {
+    padding:0 60px;
+    max-width:initial;
+}
+.launched-projects h2 {
+    text-align:center;
+    color: #090928;
+    font-size: 50px;
+    line-height: 60px;
+    padding:0 0 75px 0;
+}
+.launched-projectcard {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #F5F3F3;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+    margin-right:20px;
+}
+.project-thumbnail {
+    overflow:hidden;
+}
+.project-thumbnail img {
+    width:100%;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+}
+.launched-projectcard:hover .project-thumbnail img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.project-descp {
+    position:relative;
+    padding:35px 30px;
+}
+.project-descp h3 {
+    color: #090928;
+    font-size: 24px;
+    line-height: 1;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.project-descp span {
+    color: #9C96A4;
+    font-weight: 600;
+}
+.project-descp a {
+    top: 50%;
+    width: 72px;
+    right: 30px;
+    height: 72px;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid #F5F3F3;
+    -webkit-transform: translateY(-50%) rotate(-30deg);
+    transform: translateY(-50%) rotate(-30deg);
+}
+.project-descp a i {
+    color: #030A39;
+    -webkit-transition: 200ms all ease;
+    transition: 200ms all ease;
+}
+.launched-projectcard:hover .project-descp a i {
+    color:#fff;
+}
+.launched-projectcard:hover .project-descp a {
+    background-color:#7141B1;
+}
+.launched-projects .slick-prev, .launched-projects .slick-next {
+    bottom:-115px;
+    top:auto;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background-color:#fff;
+    transition:all .3s ease-in-out;
+    border:1px solid #F5F3F3;
+}
+.launched-projects .slick-prev {
+    left:0;
+}
+.launched-projects .slick-next {
+    right:0;
+}
+.launched-projects .slick-next:before, .launched-projects .slick-prev:before {
+    color:#000;
+    content:"\f061";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    opacity:1;
+    transition:all .3s ease-in-out;
+}
+.launched-projects .slick-prev:hover, .launched-projects .slick-next:hover {
+    background-color:#43baff;
+}
+.launched-projects .slick-next:hover:before, .launched-projects .slick-prev:hover:before {
+    color:#fff;
+}
+.launched-projects .slick-prev:before {
+    content:"\f060";
+}
+.launched-projects .slick-dots {
+    display:flex;
+    position:relative;
+    top:60px;
+    width:85%;
+    height:2px;
+    z-index: 9;
+    margin:0 auto;
+    background-color:#ccc;
+}
+.launched-projects .slick-dots li.slick-active {
+    background-color:#43baff;
+}
+.launched-projects .slick-dots li, .launched-projects .slick-dots li button {
+    width:50%;
+    height:6px;
+    border-radius:0;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+    margin-top:-2px;
+}
+.launched-projects .slick-dots li button {
+    width:100%;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+}
+.launched-projects .slick-dots li.slick-active button:before {
+    opacity:1;
+}
+/* launched projects ends here ------------------ */
+
+@media ( max-width:1399px ) {
+    .service-slider .slick-dots {
+        width:85%;
+    }
+    .service-slider .slick-prev {
+        left:0;
+    }
+    .service-slider .slick-next {
+        right:0;
+    }
+
+}
+
+@media ( max-width:1024px ) {
+    .services-row h2, .launched-projects h2 {
+        font-size:28px;
+        line-height: 1.3;
+    }
+    .service-slider .slick-dots, .launched-projects .slick-dots {
+        width:75%;
+    }
+    .service-slider .slick-prev {
+        left:0;
+    }
+    .service-slider .slick-next {
+        right:0;
+    }
+
+}
+
+@media ( max-width:767px ) {
+    .launched-projects .container, .services-row .container {
+        padding:0 30px;
+    }
+    .services-row:before {
+        left:10px;
+        right:10px;
+        width:calc( 100% - 40px );
+    }
+    .services-row h2, .launched-projects h2 {
+        font-size:20px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .services-row h2 br, .launched-projects h2 br {
+        display: none;
+    }
+    .service-slider .slick-slide {
+        margin-right:0;
+    }
+    .service-slider .slick-dots, .launched-projects .slick-dots {
+        width:55%;
+    }
+
 }
