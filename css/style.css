@@ -184,3 +184,57 @@ body, h1, h2, h3, h4, h5, h6 {
 .clients-number {
     font-size: 53px;
 }
+/*---------social-media-row starts here----------*/
+.social-media-row {
+    padding: 90px 0;
+}
+.social-media-row i { 
+    padding-right: 5px;
+}
+.arrow-bounce i {
+    animation: modeButton 3s ease-in-out infinite;
+    font-size: 42px;
+    top: -15px;
+    left: -10px;
+}
+.arrow-bounce::before {
+    top: -44px;
+    left: -53px;
+    content: "";
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 100%;
+    border: 1px solid #ECEEF1;
+}
+.social-email {
+    font-family: "Oswald";
+}
+@keyframes modeButton {
+    70% {
+        top: -15px;
+        opacity: 1;
+    }
+    95% {
+        top: 30px
+    }
+  
+    100% {
+        opacity: 0;
+
+    }
+}
+/*---------services starts here----------*/
+.services {
+    background-color: #f7f7f7;
+    padding: 84px 0;
+}
+.services .col-right {
+    max-width: 499px;
+}
+.services .col-right h2{
+    font-size: 49px;
+}
+.services .col-right p {
+    padding-top: 20px;
+}
