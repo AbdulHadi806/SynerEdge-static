@@ -137,3 +137,10 @@ $('.alithemes-slider').slick({
     }
   ]
 });
+//menu toggle 
+$( ".responsive-button" ).click(function(){
+  $( ".nav" ).slideToggle();
+});
+function myFunction(x) {
+  x.classList.toggle("change");
+}
