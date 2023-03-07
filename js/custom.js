@@ -159,30 +159,33 @@ $('html, body').ready(function () {
 $(".Home").click(function () {
   $('html, body').animate({
       scrollTop: $(".banner").offset().top
-  }, 1000);
+  }, 500);
 });
 $(".About").click(function () {
   $('html, body').animate({
       scrollTop: $(".aboutus-row").offset().top
-  }, 1000);
+  }, 500);
 });
 $(".Service").click(function () {
   $('html, body').animate({
       scrollTop: $(".services").offset().top
-  }, 1000);
+  }, 500);
 });
 $(".Projects").click(function () {
   $('html, body').animate({
       scrollTop: $(".launched-projects").offset().top
-  }, 1000);
+  }, 500);
 });
 $(".Team").click(function () {
   $('html, body').animate({
       scrollTop: $(".teams-row").offset().top
-  }, 1000);
+  }, 500);
 });
 $(".Testimonials").click(function () {
   $('html, body').animate({
       scrollTop: $(".our-reviews-row").offset().top
-  }, 1000);
+  }, 500);
+});
+$('.logo').click(function(){
+  $('html, body').animate({scrollTop:0}, 'slow');
 });
