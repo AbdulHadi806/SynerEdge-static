@@ -52,7 +52,7 @@ h2 {
 
 h3 {
   color: #fff;
-  font-family: 'Montserrat-SemiBold';
+  font-family: 'Oswald';
   font-size: 30px;
   line-height: 1;
 }
@@ -121,7 +121,9 @@ h4 {
 .logo img {
   width: 200px;
 }
-
+.header .container-fluid {
+    padding: 0 39px;
+}
 .navigation-list {
   gap: 20px;
   margin-bottom: 0 !important;
@@ -133,10 +135,11 @@ h4 {
   position: -webkit-sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
-
 .header a {
-  font-weight: 600;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .phoneNumber {
@@ -149,22 +152,21 @@ h4 {
     -webkit-text-fill-color: transparent;
 }
 /*---------Banner starts here----------*/
-.banner .container {
+.banner {
   background: url('../images/background.jpg') no-repeat;
   background-size: cover;
   overflow: hidden;
   border-radius: 50px;
+  width: calc(100% - 71px);
 }
 .paper-pane {
     
 }
 .banner img {
-  clip: rect(0px, 584px, 728px, -2px);
+  clip: rect(0px, 646px, 728px, -2px);
   position: absolute;
+  border-bottom:7px solid #8000ff;
   right: -130px;
-}
-.col-right-banner img {
-    border-bottom:4px solid #8000ff;
 }
 .col-left {
   padding: 130px 0 130px 20px;
@@ -225,7 +227,7 @@ h4 {
   background: url('https://www.clarklavey.com/wp-content/uploads/2020/09/0918_RenewalCampaign.png')
     no-repeat;
   background-size: cover;
-  padding: 96px 0;
+  padding: 86px 0;
   border-radius: 30px;
 }
 
@@ -294,6 +296,7 @@ h4 {
 
 .social-email {
   font-family: 'Oswald';
+  font-size: 22px;
 }
 
 @keyframes modeButton {
@@ -386,7 +389,7 @@ h4 {
 .service-descp h3 {
   color: #090928;
   font-size: 26px;
-  max-width: 185px;
+  max-width: 169px;
   line-height: 32px;
   margin-bottom: 50px;
 }
@@ -543,7 +546,7 @@ h4 {
   font-size: 24px;
   line-height: 1;
   padding-bottom: 15px;
-  max-width: 234px;
+  max-width: 182px;
   text-transform: uppercase;
 }
 
@@ -684,7 +687,7 @@ h4 {
 }
 
 .our-reviews-row .container {
-  padding: 67px 0;
+    padding: 115px 0 67px 0px;
 }
 
 .our-reviews-row {
@@ -696,18 +699,13 @@ h4 {
   max-width: 1290px;
   gap: 10px;
   margin: 0 auto;
-  height: 388px;
+  height: 560px;
   border-radius: 33px;
   border-left:4px solid rgb(0, 0, 182);
   border-bottom:4px solid rgb(0, 0, 182);
   border-right:4px solid #8000ff;
 
 }
-
-.reviews-box {
-  padding: 50px 10px;
-}
-
 .rating-stars {
   padding: 30px 0 0 0;
 }
@@ -968,4 +966,64 @@ h4 {
 
 .change .btn3 {
   transform: translate(0, -11px) rotate(45deg);
+}
+/*bounce animation*/
+.bounce:hover {
+    animation: bounce 2s ease infinite;
+    -webkit-animation: bounce 1s ease;
+    animation: bounce 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  @-webkit-keyframes bounce {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
