@@ -31,7 +31,10 @@ h1 {
  h2{
     font-size: 35px;
     color: #172742;
-   
+    text-align: center;
+    color: #090928;
+    font-size: 50px;
+    line-height: 60px;
 }
 h3{
     color: #fff;
@@ -186,7 +189,6 @@ h4 {
 }
 .aboutus-row h2 {
     z-index: 9;
-    font-size: 35px;
     font-weight: 400;
 }
 .aboutus-box:before {
@@ -539,8 +541,102 @@ h4 {
     opacity:1;
 }
 /* launched projects ends here ------------------ */
+/*---------teams row starts here--------------*/
+.teams-row {
+    padding: 81px 0;
+    background-color: #f7f7f7;
+}
+.team-description {
+    padding: 15px 0;
+}
+/*---------our-reviews-row starts here--------------*/
+.our-reviews-row::before {
+    background: url("../images/background.jpg") no-repeat;
+    background-size: cover;
+    height: 420px;
+    width: calc( 100% - 71px );
+    border-radius: 40px;
+    content: '';
+    position: absolute;
+    left: 32px;
+    right: 70px;
+    top: 0;
+    margin: 0 auto;
+}
+.our-reviews-row .container {
+    padding: 67px 0;
+}
+.our-reviews-row {
+    background-color: #f7f7f7;
+}
+.our-reviews-slider {
+    margin-top: 78px;
+    max-width: 1290px;
+    gap: 10px;
+    margin: 0 auto;
+    height: 388px;
+    border-radius: 33px;
+}
+.reviews-box {
+    padding: 50px 10px;
+}
+.rating-stars {
+    padding: 30px 0 0 0;
+}
+.rating-stars i {
+    color:#FFA439;
+}
+.rating-description span {
+    color: #090928;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.rating-description p{
+    padding: 30px 0;
+    max-width: 891px;
+    color: #090928;
+    font-size: 24px;
+    line-height: 38px;
+    margin: 0 auto;
+}
+.our-reviews-slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    border-radius: 50%;
+    border: 1px solid #6f42c1;
+    height: 12px;
+    margin: 0 5px;
+    top: -42px;
+    color: #000;
+    padding: 0;
+    cursor: pointer;
+}
+.our-reviews-slider .slick-active button::before{
+    background-color: #6f42c1;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
 
+}
+.alithemes-row {
+    padding: 0 0 33px 0;
+}
+.alithemes-row .container {
+    max-width: 1311px;
+}
 @media ( max-width:1399px ) {
+    .container {
+        padding: 0 40px;
+    }
+    .col-right-banner img {
+        width: 100%;
+    }
+    .col-left h1 {
+        font-size: 59px;
+        line-height: 65px;
+    }
     .service-slider .slick-dots {
         width:85%;
     }
@@ -554,6 +650,25 @@ h4 {
 }
 
 @media ( max-width:1024px ) {
+    .container {
+        max-width: 1327px;
+    }
+    .navigation-list {
+        gap: 13px;
+    }
+    .navigation-list a {
+        font-size: 15px;
+    }
+    .phoneNumber a {
+        font-size: 22px;
+    }
+    .col-left{
+        max-width: initial;
+        font-size: 22px;
+    }
+    .col-left p {
+        max-width: initial;
+    }
     .services-row h2, .launched-projects h2 {
         font-size:28px;
         line-height: 1.3;
@@ -570,7 +685,7 @@ h4 {
 
 }
 
-@media ( max-width:767px ) {
+@media ( max-width:780px) {
     .launched-projects .container, .services-row .container {
         padding:0 30px;
     }
@@ -578,6 +693,17 @@ h4 {
         left:10px;
         right:10px;
         width:calc( 100% - 40px );
+    }
+    .service-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .service-descp h3 {
+        max-width: initial;
+
+    }
+    .service-descp  {
+        text-align: center !important;
     }
     .services-row h2, .launched-projects h2 {
         font-size:20px;
