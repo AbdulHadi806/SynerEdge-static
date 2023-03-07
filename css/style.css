@@ -949,7 +949,19 @@ h4 {
     width: 55%;
   }
 }
-
+@media (max-width: 480px) {
+    .col-left h1{
+        font-size: 34px;
+        line-height: 43px;
+        padding-bottom: 10px;
+    }
+    .buttonsMain {
+        font-size: 18px;
+    font-weight: 500;
+    width: 215px;
+    height: 64px;
+    }
+}
 /*Custom progress bar*/
 .progress .progress-bar {
   box-shadow: none;
