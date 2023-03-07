@@ -4,6 +4,8 @@ $('.service-slider').slick({
   arrows:true,
   infinite: true,
   speed: 300,
+  autoplay: true,
+  autoplaySpeed: 1500,
   slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
@@ -41,6 +43,8 @@ $('.launchedprojects-slider').slick({
   arrows:true,
   infinite: true,
   speed: 300,
+  autoplay: true,
+  autoplaySpeed: 1500,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -67,6 +71,8 @@ $('.sliders-row').slick({
   dots: true,
   arrows:true,
   infinite: true,
+  autoplay: true,
+  autoplaySpeed: 1500,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -144,3 +150,39 @@ $( ".responsive-button" ).click(function(){
 function myFunction(x) {
   x.classList.toggle("change");
 }
+// scroll 
+$('html, body').ready(function () {
+  $(".testimonial-button").click(function () {
+      alert("Page not avaliable");
+  });
+})
+$(".Home").click(function () {
+  $('html, body').animate({
+      scrollTop: $(".banner").offset().top
+  }, 1000);
+});
+$(".About").click(function () {
+  $('html, body').animate({
+      scrollTop: $(".aboutus-row").offset().top
+  }, 1000);
+});
+$(".Service").click(function () {
+  $('html, body').animate({
+      scrollTop: $(".services").offset().top
+  }, 1000);
+});
+$(".Projects").click(function () {
+  $('html, body').animate({
+      scrollTop: $(".launched-projects").offset().top
+  }, 1000);
+});
+$(".Team").click(function () {
+  $('html, body').animate({
+      scrollTop: $(".teams-row").offset().top
+  }, 1000);
+});
+$(".Testimonials").click(function () {
+  $('html, body').animate({
+      scrollTop: $(".our-reviews-row").offset().top
+  }, 1000);
+});
