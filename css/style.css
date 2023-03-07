@@ -150,7 +150,13 @@ h4 {
   overflow: hidden;
   border-radius: 50px;
 }
-
+.paper-pane {
+    margin-right: 10px;
+    background: linear-gradient(204.31deg, #43BAFF 0%, #7141B1 73.56%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .banner img {
   clip: rect(0px, 584px, 728px, -2px);
   position: absolute;
@@ -316,6 +322,7 @@ h4 {
 
 .services .col-right h2 {
   font-size: 49px;
+  text-align: left;
 }
 
 /* services row starts here --------------------- */
