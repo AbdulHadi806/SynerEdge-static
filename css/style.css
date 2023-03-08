@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
 }
-
+ul {padding-left: 0;}
 body,
 h1,
 h2,
@@ -162,6 +162,7 @@ h4 {
   background-size: cover;
   overflow: hidden;
   border-radius: 50px;
+  margin-top: 10px;
   width: calc(100% - 71px);
 }
 .banner img {
@@ -853,7 +854,6 @@ h4 {
 }
 .footer h4 {
   font-size: 20px;
-  padding-left: 30px;
 }
 .footer li {
   color: #B5B5D1 !important;
@@ -879,36 +879,36 @@ h4 {
   .navigation-list {
     gap: 28px;
   }
+  .col-right-banner  div{
+    padding-top: 150px;
+  }
   .col-right-banner img {
     width: 100%;
   }
-
   .col-left h1 {
     font-size: 59px;
     line-height: 65px;
   }
-
   .service-slider .slick-dots {
     width: 85%;
   }
-
   .service-slider .slick-prev {
     left: 0;
   }
-
   .service-slider .slick-next {
     right: 0;
   }
 }
-
 @media (max-width: 1024px) {
   .container {
     max-width: 1327px;
   }
+  .col-right-banner  div{
+    padding-top: initial;
+  }
   .header ul li {
     position: relative;
   }
-  
   .form {
     display: initial !important;
   }
@@ -953,7 +953,7 @@ h4 {
     max-width: initial;
   }
 
-  .services-row h2,.teams-row h2, .our-reviews-row h2,.blogs-row h2, .subscribe-row h2 ,
+  .services-row h2,.teams-row h2, .our-reviews-row h2,.blogs-row h2, .subscribe-row h2 , .services .col-right h2,
   .launched-projects h2 {
     font-size: 28px;
     line-height: 1.3;
@@ -978,6 +978,9 @@ h4 {
   .services-row .container {
     padding: 0 30px;
   }
+  .services .col-right {
+    max-width: initial;
+  }
   .services img {
     margin-top: 20px;
   }
@@ -987,6 +990,12 @@ h4 {
   .bounce-main {
     order: 3;
   }
+  .aboutus-row h2 {
+    font-size: 27px;
+  }
+  .clients-number {
+    font-size: 34px;
+}
   .social-links {
     justify-content: center;
   }
@@ -1097,7 +1106,10 @@ h4 {
   .launched-projects h2 br {
     display: none;
   }
-
+  .services p {
+    font-size: 12px;
+    padding: 10px 0;
+  }
   .service-slider .slick-slide {
     margin-right: 0;
   }
@@ -1106,19 +1118,41 @@ h4 {
   .launched-projects .slick-dots {
     width: 55%;
   }
-}
-@media (max-width: 480px) {
   .col-left h1 {
     font-size: 34px;
     line-height: 43px;
     padding-bottom: 10px;
   }
+}
+@media (max-width: 480px) {
   .buttonsMain {
     font-size: 18px;
     font-weight: 500;
     width: 215px;
     height: 64px;
   }
+  .col-left h1 {
+    font-size: 20px;
+    line-height: 33px;
+}
+.col-left {
+  padding: 79px 0 88px 0;
+}
+.banner .container {
+  padding: 0 10px;
+}
+  .header ul li:after {
+    width: 111%;
+}
+.footer h4 {
+  font-size: 10px;
+}
+.footer li {
+  font-size: 13px;
+}
+.footer .container-fluid {
+  padding: 30px 10px;
+}
 }
 /*Custom progress bar*/
 .progress .progress-bar {
