@@ -44,7 +44,7 @@ $('.launchedprojects-slider').slick({
   infinite: true,
   speed: 300,
   autoplay: true,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 233300,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -132,6 +132,13 @@ $('.alithemes-slider').slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
       }
     },
     {
