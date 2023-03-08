@@ -671,45 +671,6 @@ h4 {
 }
 
 /* launched projects ends here ------------------ */
-/*---------teams row starts here--------------*/
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-span {
-  display: block;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
-}
-
-a,
-button {
-  display: inline-block;
-  cursor: pointer;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1320px;
-  margin: 0% auto;
-}
-
 /* meet-us starts */
 .meet-us h2 {
   width: 100%;
@@ -1184,7 +1145,7 @@ ol {
     max-width: initial;
   }
 
-  .services-row h2,.teams-row h2, .our-reviews-row h2,.blogs-row h2, .subscribe-row h2 , .services .col-right h2,.meet-us h2,
+  .services-row h2, .our-reviews-row h2,.blogs-row h2, .subscribe-row h2 , .services .col-right h2,.meet-us h2,
   .launched-projects h2 {
     font-size: 28px;
     line-height: 1.3;
@@ -1384,7 +1345,7 @@ ol {
     font-size: 20px;
     line-height: 33px;
 }
-.services-row h2, .teams-row h2, .our-reviews-row h2, .blogs-row h2, .subscribe-row h2, .services .col-right h2, .launched-projects h2,.meet-us h2 {
+.services-row h2,  .our-reviews-row h2, .blogs-row h2, .subscribe-row h2, .services .col-right h2, .launched-projects h2,.meet-us h2 {
   font-size: 25px;
   line-height: 1.3;
 }
