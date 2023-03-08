@@ -73,7 +73,7 @@ $('.blogs-slider').slick({
   infinite: true,
   speed: 300,
   autoplay: true,
-  autoplaySpeed: 233300,
+  autoplaySpeed: 1500,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -96,25 +96,16 @@ $('.blogs-slider').slick({
   ]
 });
 // initializing team slider
-$('.sliders-row').slick({
-  dots: true,
+$('.card-wrapper').slick({
+  dots: false,
   arrows:true,
   infinite: true,
+  speed: 300,
   autoplay: true,
   autoplaySpeed: 1500,
-  speed: 300,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
     {
       breakpoint: 1024,
       settings: {
@@ -124,8 +115,16 @@ $('.sliders-row').slick({
         dots: true
       }
     },
+    ,
     {
-      breakpoint: 767,
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -133,6 +132,7 @@ $('.sliders-row').slick({
     }
   ]
 });
+
 //initializing launched rating slider
 $('.our-reviews-slider').slick({
   dots: true,
