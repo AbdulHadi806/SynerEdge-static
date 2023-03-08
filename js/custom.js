@@ -66,6 +66,35 @@ $('.launchedprojects-slider').slick({
     }
   ]
 });
+//initializing launched blogs-slider 
+$('.blogs-slider').slick({
+  dots: true,
+  arrows:true,
+  infinite: true,
+  speed: 300,
+  autoplay: true,
+  autoplaySpeed: 233300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 // initializing team slider
 $('.sliders-row').slick({
   dots: true,

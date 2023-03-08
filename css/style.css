@@ -978,6 +978,18 @@ h4 {
   .services-row .container {
     padding: 0 30px;
   }
+  .arrow-bounce i {
+    font-size: 31px;
+    top: -32px;
+    left: 2px;
+  }
+  .arrow-bounce::before {
+    top: -44px;
+    left: -32px;
+    content: '';
+    width: 99px;
+    height: 99px;
+  }
   .services .col-right {
     max-width: initial;
   }
@@ -1134,6 +1146,12 @@ h4 {
   .col-left h1 {
     font-size: 20px;
     line-height: 33px;
+}
+.logo img {
+  width: 154px;
+}
+.blogs-row span {
+  font-size: 13px;
 }
 .col-left {
   padding: 79px 0 88px 0;
