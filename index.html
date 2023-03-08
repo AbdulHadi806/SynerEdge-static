@@ -26,9 +26,7 @@
             <div class="logo">
                 <a href="#"><img src="./images/logo.png" alt="SynerEdge Soft Solutions"></a>
             </div>
-            <nav class="nav" data-aos="fade-in"
-            data-aos-easing="linear"
-            data-aos-duration="500">
+            <nav class="nav">
                 <ul class="d-flex navigation-list">
                     <li class="Home"><a style="color: #000;" class="list-style-type-none" href="#">Home</a></li>
                     <li class="About"><a style="color: #000;" href="#">About</a></li>
@@ -812,7 +810,9 @@
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
       </script>
 </body>
 
