@@ -863,6 +863,15 @@ h4 {
 .footer .container-fluid {
   padding: 71px 48px 30px 48px;
 }
+.bottom-footer {
+  margin: 30px 0px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.bottom-footer p {
+  font-weight: 300;
+  font-size: 13px;
+  padding-top: 30px;
+}
 @media (max-width: 1399px) {
   .container {
     padding: 0 40px;
@@ -896,7 +905,31 @@ h4 {
   .container {
     max-width: 1327px;
   }
-
+  .header ul li {
+    position: relative;
+  }
+  
+  .form {
+    display: initial !important;
+  }
+  .subscribe-row input {
+    width: 97%;
+  }
+  .form button {
+    position: initial !important;
+  }
+  .header ul li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    background-color: #fff;
+    height: 1px;
+    width: 105%;
+  }
+  .navigation-list a:hover {
+    color: #8a8181 !important;
+  }
   .navigation-list {
     gap: 13px;
   }
@@ -951,6 +984,19 @@ h4 {
   .social-media-row {
     padding: 89px 0 20px 0;
   }
+  .bounce-main {
+    order: 3;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .social-email-main {
+    justify-content: center !important; 
+    padding-bottom: 50px;
+  }
+  .aboutus-box, .aboutus-box:before {
+    border-radius: 19px;
+  }
   .blogs-update a {
     font-size: 14px;
   }
@@ -990,8 +1036,8 @@ h4 {
     top: 45px;
   }
   .navigation-list a {
-    font-size: 30px;
-    line-height: 43px;
+    font-size: 18px;
+    line-height: 32px;
     color: #fff !important;
   }
   .header .container {
