@@ -228,17 +228,37 @@ $('.logo').click(function(){
 
 
 
-$('.count').each(function () {
-  $(this).prop('Counter', 0).animate({
-          Counter: $(this).data('value')
-      }, {
-      duration: 1000,
-      easing: 'swing',
-      step: function (now) {                      
-          $(this).text(this.Counter.toFixed());
-      }
-  });
-});
+const elements = document.querySelectorAll(".count");
+  const options = {
+    threshold: 0.5
+  }
+  let Observer = new IntersectionObserver(
+    function (entries, Observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                    Counter: $(this).data('value')
+                }, {
+                duration: 1000,
+                easing: 'swing',
+                step: function (now) {                      
+                    $(this).text(this.Counter.toFixed());
+                }
+            });
+          });
+         console.log(" I am visible on viewport")
+          Observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+
+  elements.forEach(element => {
+    Observer.observe(element);
+  })
+
+
 
 // loader here
 document.onreadystatechange = function() {
