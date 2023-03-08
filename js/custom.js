@@ -284,22 +284,11 @@ document.onreadystatechange = function() {
 
 // header sticky
 // adding class to header on scroll
-function headerFixed() {
-  jQuery(window).scroll(function() {    
-    var scroll = jQuery(window).scrollTop();
-    var atfHeight = jQuery( ".banner" ).height();
-
-    if (scroll >= 50) {
-        jQuery(".header").addClass("position-fixed");
-    }else {
-        jQuery(".header").removeClass("position-fixed");
-    }
-
-    if ( scroll >= atfHeight - 600 ) {
-        jQuery(".atf-fix-buttons").addClass("change-color");
-    }else {
-        jQuery(".atf-fix-buttons").removeClass("change-color");
-    }
-
-  });
-}
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 100) {
+    $('.header').slideDown( "slow" ).addClass('fixed');
+   }
+   else {
+    $('.header').removeClass('fixed');
+   }
+});
