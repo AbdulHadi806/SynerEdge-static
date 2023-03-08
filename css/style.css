@@ -1112,15 +1112,6 @@ h4 {
   .form button {
     position: initial !important;
   }
-  .header ul li:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -40px;
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 1px;
-    width: 105%;
-  }
   .navigation-list a:hover {
     color: #8a8181 !important;
   }
@@ -1178,6 +1169,12 @@ h4 {
     left: 2px;
   }
   .header ul li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 1px;
     width: 111%;
 }
 .nav {
