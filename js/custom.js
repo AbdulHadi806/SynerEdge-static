@@ -219,7 +219,7 @@ $(".Projects").click(function () {
 });
 $(".Team").click(function () {
   $('html, body').animate({
-      scrollTop: $(".teams-row").offset().top
+      scrollTop: $(".meet-us").offset().top
   }, 500);
 });
 $(".Testimonials").click(function () {
@@ -285,12 +285,8 @@ $(window).scroll(function(){
   if ($(window).scrollTop() >= 200) {
     $('.header').addClass('fixed');
     $(".header").slideDown("slow");
-   }
+}
    else {
     $('.header').removeClass('fixed');
    }
 });
-
-
-
-

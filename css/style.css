@@ -77,15 +77,6 @@ h4 {
 
 @font-face {
   font-family: 'Oswald';
-  src: url('../fonts/Oswald-ExtraLight.woff2') format('woff2'),
-    url('../fonts/Oswald-ExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Oswald';
   src: url('../fonts/Oswald-Light.woff2') format('woff2'),
     url('../fonts/Oswald-Light.woff') format('woff');
   font-weight: 300;
@@ -962,6 +953,11 @@ h4 {
   font-size: 23px;
   border: initial;
 }
+.blogs-row .launched-projectcard {
+  background-color: #fff !important;
+  max-width: 399px;
+  width: 100%;
+}
 .blogs-row .project-descp h3 {
   max-width: 396px !important;
   line-height: 29px;
@@ -1101,9 +1097,7 @@ h4 {
     top: 100%;
 }
 }
-  .col-right-banner  div{
-    padding-top: 150px;
-  }
+  
   .col-right-banner img {
     width: 100%;
   }
