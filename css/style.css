@@ -837,6 +837,16 @@ h4 {
   color: #7141b1;
   font-weight: 700;
 }
+.meet-us .slick-next:hover:before {
+  background-color: #43baff;
+  color: #fff;
+  transition: .2s all ease-in-out;;
+}
+.meet-us .slick-prev:hover:before {
+  background-color: #43baff;
+  color: #fff;
+  transition: .2s all ease-in-out;;
+}
 
 /* meet-us ends*/
 
@@ -1052,7 +1062,7 @@ h4 {
   font-size: 13px;
   padding-top: 30px;
 }
-@media (max-width: 1500px) and (min-width: 1400px) {
+@media (max-width: 1537px) and (min-width: 1400px) {
   .meet-us .slick-prev {
     left: 0 !important;
     top: 100%;
@@ -1167,6 +1177,12 @@ h4 {
   .launched-projects .container,
   .services-row .container {
     padding: 0 30px;
+  }
+  .meet-us .card-1 img {
+    width: 89%;
+  }
+  .meet-us .join-us {
+    padding-top: 36px;
   }
   .arrow-bounce i {
     font-size: 31px;
@@ -1344,13 +1360,6 @@ h4 {
     font-weight: 500;
     width: 215px;
     height: 64px;
-  }
-  .meet-us .slick-next {
-    display: none !important;
-  }
-
-  .meet-us .slick-prev {
-      display: none !important;
   }
   .col-left h1 {
     font-size: 20px;

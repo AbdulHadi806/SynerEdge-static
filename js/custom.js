@@ -111,7 +111,6 @@ $('.card-wrapper').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: true,
       }
     },
     {
@@ -119,7 +118,6 @@ $('.card-wrapper').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
       }
     },
     ,
@@ -285,8 +283,9 @@ document.onreadystatechange = function() {
 // header sticky
 // adding class to header on scroll
 $(window).scroll(function(){
-  if ($(window).scrollTop() >= 100) {
-    $('.header').slideDown( "slow" ).addClass('fixed');
+  if ($(window).scrollTop() >= 200) {
+    $('.header').addClass('fixed');
+    $(".header").slideDown("slow");
    }
    else {
     $('.header').removeClass('fixed');
