@@ -197,37 +197,44 @@ $('html, body').ready(function () {
       alert("Page not avaliable");
   });
 })
-$(".Home").click(function () {
+$(".Home").click(function (event) {
+  event.preventDefault();
   $('html, body').animate({
       scrollTop: $(".banner").offset().top
   }, 500);
 });
-$(".About").click(function () {
+$(".About").click(function (event) {
+  event.preventDefault();
   $('html, body').animate({
       scrollTop: $(".aboutus-row").offset().top
   }, 500);
 });
-$(".Service").click(function () {
+$(".Service").click(function (event) {
+  event.preventDefault();
   $('html, body').animate({
       scrollTop: $(".services").offset().top
   }, 500);
 });
-$(".Projects").click(function () {
+$(".Projects").click(function (event) {
+  event.preventDefault();
   $('html, body').animate({
       scrollTop: $(".launched-projects").offset().top
   }, 500);
 });
-$(".Team").click(function () {
+$(".Team").click(function (event) {
+  event.preventDefault();
   $('html, body').animate({
       scrollTop: $(".meet-us").offset().top
   }, 500);
 });
-$(".Testimonials").click(function () {
+$(".Testimonials").click(function (event) {
+  event.preventDefault();
   $('html, body').animate({
       scrollTop: $(".our-reviews-row").offset().top
   }, 500);
 });
-$('.logo').click(function(){
+$('.logo').click(function (event) {
+  event.preventDefault();
   $('html, body').animate({scrollTop:0}, 'slow');
 });
 
