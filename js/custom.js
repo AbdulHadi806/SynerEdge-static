@@ -252,7 +252,6 @@ const elements = document.querySelectorAll(".count");
                 }
             });
           });
-         console.log(" I am visible on viewport")
           Observer.unobserve(entry.target);
         }
       });
