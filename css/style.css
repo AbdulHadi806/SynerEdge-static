@@ -189,6 +189,8 @@ h4 {
     z-index: 1;
   height: 100%;
 	position: absolute;
+  border-radius: 50%;
+  border-bottom: 10px solid #8000ff;
 }
 .blue-fade-image{
 	-webkit-mask-box-image: url('../images/black-mask.png');
@@ -198,7 +200,7 @@ h4 {
     height: 100%;
 }
 .blue-fade-image img {
-  height: auto;
+  height: 100%;
 }
 .col-left {
   padding: 130px 0 130px 20px;
