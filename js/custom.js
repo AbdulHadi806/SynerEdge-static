@@ -239,7 +239,7 @@ $('.logo').click(function (event) {
 });
 
 
-
+//counter here
 const elements = document.querySelectorAll(".count");
   const options = {
     threshold: 0.5
@@ -287,11 +287,9 @@ document.onreadystatechange = function() {
 };
 
 // header sticky
-// adding class to header on scroll
 $(window).scroll(function(){
   if ($(window).scrollTop() >= 200) {
     $('.header').addClass('fixed');
-    $(".header").slideDown("slow");
 }
    else {
     $('.header').removeClass('fixed');

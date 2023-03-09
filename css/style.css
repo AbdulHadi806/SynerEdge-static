@@ -17,7 +17,6 @@ h6 {
   font-family: 'Oswald', 'Archivo';
   font-weight: 400;
 }
-
 .container {
   max-width: 1450px;
   margin: 0 auto;
@@ -173,14 +172,33 @@ h4 {
   background-size: cover;
   overflow: hidden;
   border-radius: 50px;
+  position: relative;
   margin-top: 10px;
   width: calc(100% - 71px);
 }
-.banner img {
-  clip: rect(0px, 646px, 728px, -2px);
-  position: absolute;
-  border-bottom: 7px solid #8000ff;
-  right: -130px;
+
+.it-solution-banner{
+	padding-top: 125px;
+	padding-left: 70px;
+	padding-right: 70px;
+	overflow: hidden;
+}
+.it-banner-img-wrapper{
+    top: -8px;
+    right: 0;
+    z-index: 1;
+  height: 100%;
+	position: absolute;
+}
+.blue-fade-image{
+	-webkit-mask-box-image: url('../images/black-mask.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.blue-fade-image img {
+  height: auto;
 }
 .col-left {
   padding: 130px 0 130px 20px;
@@ -1079,10 +1097,17 @@ h4 {
     right: 0 !important;
     top: 100%;
 }
+.it-banner-img-wrapper {
+  width: 609px !important;
+}
 }
 @media (max-width: 1400px) {
   .container {
     padding: 0 40px;
+  }
+  .it-banner-img-wrapper {
+    width: 523px;
+    height: 534px;
   }
   .navigation-list {
     gap: 28px;
@@ -1097,10 +1122,6 @@ h4 {
     top: 100%;
 }
 }
-  
-  .col-right-banner img {
-    width: 100%;
-  }
   .col-left h1 {
     font-size: 59px;
     line-height: 65px;
@@ -1117,6 +1138,12 @@ h4 {
 @media (max-width: 1024px) {
   .container {
     max-width: 1327px;
+  }
+  .it-banner-img-wrapper {
+    display: none;
+  }
+  .banner .col-lg-6 {
+    width: initial;
   }
   .col-right-banner  div{
     padding-top: initial;
